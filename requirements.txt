@@ -1,4 +1,7 @@
 Flask==1.1.2
+Flask-RESTful
+Flask-SQLAlchemy
+uwsgi
 requests==2.23.0
 twilio==6.39.0
 Werkzeug==1.0.1
