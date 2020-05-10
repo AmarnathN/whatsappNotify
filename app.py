@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SANDBOX_ID'] = os.environ.get('SANDBOX_ID')
 app.config['WHATSAPP_NUMBER'] = os.environ.get('WHATSAPP_NUMBER')
+
 @app.route("/")
 def hello():
     print(app.config['SANDBOX_ID'])
