@@ -22,7 +22,7 @@ def send_notify():
                 media_url=['https://www.gannett-cdn.com/presto/2019/07/24/USAT/4cb62745-ee53-4eca-8905-c34f0da4faf7-VPC_COMING_TO_NETFLIX_AUG_DESK_THUMB.00_00_23_11.Still002.jpg?width=1320&height=744&fit=crop&format=pjpg&auto=webp'],
                 from_='whatsapp:+14155238886',
                 body=(mail_subject),
-                to='whatsapp:+919030868767'
+                to='whatsapp:+918099357257'
             )
         print("notify mail from netflix has been whatsapped !!!")
     else:
