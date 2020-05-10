@@ -18,4 +18,4 @@
 
 ### The WhatsApp notification would give the Full subject as message as following
 
-![WhatsApp Notification](https://i.imgur.com/2hn0K4d.png)
+![WhatsApp Notification](https://i.imgur.com/GrMPNoX.png)
