@@ -1,17 +1,21 @@
   
 from flask import Flask, request
 from twilio.rest import Client
+import os
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SANDBOX_ID'] = os.environ.get('SANDBOX_ID')
 
 @app.route("/")
 def hello():
+    print(app.config['SANDBOX_ID'])
     return "WhatsApp notify service is up !!!!"
 
 @app.route("/notify", methods=['POST'])
 def send_notify():
-    account_sid = 'AC26655be2355e4c0ee534631e5376092a'
-    auth_token = '9d5a7cb0c8503f303f4e9bd7c8a0cd95'
+    account_sid = app.config['SANDBOX_ID']
+    auth_token = app.config['SECRET_KEY']
     data = request.form.to_dict()
     mail_subject=((data['subject']))
     if ("is now on Netflix".lower() in mail_subject.lower()):
